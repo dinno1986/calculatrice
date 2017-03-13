@@ -60,10 +60,10 @@ $('document').ready(function(){
 	//Reset
 
 	$('.reset').click(function(){
-			var bar=""
-			var foo=""
-			var result=""
-		$('input').texte="Entrez un chiffre";
+		bar="";
+		foo="";
+		result="";
+		$('input').val("ENter");
 	});
 
 
