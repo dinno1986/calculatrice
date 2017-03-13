@@ -1,4 +1,4 @@
-$('document').ready(function(){
+
 	var foo="";
 	var bar="";
 	var result="";
@@ -22,8 +22,15 @@ $('document').ready(function(){
 	$('.valeur2').click(function(){
 		foo=foo +$(this).html();
 		console.log(foo);
-		console.log(typeof foo);
 		$('input').val(foo);
+	});
+
+// Entrée de la variable 3
+
+	$('.valeur3').click(function(){
+		result=result+$(this).html();
+		console.log(result);
+		$('input').val(result);
 	});
 
 // Entrée une addition
@@ -31,7 +38,6 @@ $('document').ready(function(){
 	$('.addition').click(function(){
 		result= parseInt(bar)+parseInt(foo);
 		console.log(result);
-		console.log(typeof result);
 	});
 
 // Entrée d'une soustraction
@@ -39,7 +45,6 @@ $('document').ready(function(){
 	$('.soustraction').click(function(){
 		result= parseInt(bar)-parseInt(foo);
 		console.log(result);
-		console.log(typeof result);
 	});
 
 // Entrée d'une multiplication
@@ -48,7 +53,13 @@ $('document').ready(function(){
 	$('.multiplication').click(function(){
 		result= parseInt(bar)*parseInt(foo);
 		console.log(result);
-		console.log(typeof result);
+	});
+
+// Entrée de division
+
+	$('.division').click(function(){
+		result= parseInt(bar)/parseInt(foo);
+		console.log(result);
 	});
 
 // Entrée de égale
@@ -63,13 +74,13 @@ $('document').ready(function(){
 		bar="";
 		foo="";
 		result="";
-		$('input').val("ENter");
+		$('input').val("Entrer un chiffre");
 	});
 
 
 
 
-});
+
 
 
 
