@@ -25,7 +25,23 @@ $('document').ready(function(){
 		console.log(typeof foo);
 		$('input').val(foo);
 	});
+
+// Entrée une addition
+
+	$('.valeur3').click(function(){
+		result= parseInt(bar)+parseInt(foo);
+		console.log(result);
+		console.log(typeof result);
+		$('input').val(result);
+	});
+
+
+
+
+
+
 });
+
 
 /* 
 	function addition (a,b ) {
