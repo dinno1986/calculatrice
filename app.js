@@ -28,19 +28,61 @@ $('document').ready(function(){
 
 // Entrée une addition
 
-	$('.valeur3').click(function(){
+	$('.addition').click(function(){
 		result= parseInt(bar)+parseInt(foo);
 		console.log(result);
 		console.log(typeof result);
-		$('input').val(result);
+	});
+
+// Entrée d'une soustraction
+
+	$('.soustraction').click(function(){
+		result= parseInt(bar)-parseInt(foo);
+		console.log(result);
+		console.log(typeof result);
+	});
+
+// Entrée d'une multiplication
+
+
+	$('.multiplication').click(function(){
+		result= parseInt(bar)*parseInt(foo);
+		console.log(result);
+		console.log(typeof result);
+	});
+
+// Entrée de égale
+
+	$('.egale').click(function(){
+			$('input').val(result);
+	});
+
+	//Reset
+
+	$('.reset').click(function(){
+			var bar=""
+			var foo=""
+			var result=""
+		$('input').texte="Entrez un chiffre";
 	});
 
 
 
 
-
-
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* 
